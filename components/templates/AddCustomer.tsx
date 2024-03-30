@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const AddCustomer: React.FC = (): JSX.Element => {
   const [form, setForm] = useState({
-    name: "321321321",
+    name: "",
     lastname: "",
     phone: "",
     email: "",

@@ -14,49 +14,49 @@ const Form = ({ form, setForm }: { form: any; setForm: React.SetStateAction<any>
         type="text"
         name="name"
         label="Name"
-        value={form.name}
+        value={form.name || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="text"
         name="lastname"
         label="lastname"
-        value={form.lastname}
+        value={form.lastname || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="text"
         name="email"
         label="email"
-        value={form.email}
+        value={form.email || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="text"
         name="phone"
         label="phone"
-        value={form.phone}
+        value={form.phone || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="text"
         name="address"
         label="address"
-        value={form.address}
+        value={form.address || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="text"
         name="postalCode"
         label="postalCode"
-        value={form.postalCode}
+        value={form.postalCode || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <FormInput
         type="date"
         name="date"
         label="date"
-        value={form.date}
+        value={form.date || ""}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => changeHandler(e)}
       />
       <ItemList form={form} setForm={setForm} />

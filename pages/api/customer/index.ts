@@ -13,10 +13,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === "POST") {
     const { data } = JSON.parse(req.body);
 
-    console.log("-----------------------------------------------");
-    console.log(data);
-    console.log("-----------------------------------------------");
-
     // Validation
     if (!data.name || !data.lastname || !data.email)
       return res.status(400).json({ status: "failed", message: "Invalid Data" });
